@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'font-awesome-brands';
+    src:
+        url('../webfonts/font-awesome-brands/font-awesome-brands.ttf') format('truetype'),
+        url('../webfonts/font-awesome-brands/font-awesome-brands.woff') format('woff'),
+        url('../webfonts/font-awesome-brands/font-awesome-brands.svg#font-awesome-brands') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="fa-"],
+[class*=" fa-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'font-awesome-brands' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: normal;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    transform: rotate(0.003deg); 
+}
+
+.fa-square-x-twitter:before {
+  content: "\e900";
+}
+.fa-x-twitter:before {
+  content: "\e901";
+}
+.fa-px:before {
+  content: "\e902";
+}
+.fa-amazon:before {
+  content: "\e903";
+}
+.fa-android:before {
+  content: "\e904";
+}
+.fa-apple:before {
+  content: "\e905";
+}
+.fa-behance:before {
+  content: "\e906";
+}
+.fa-blogger:before {
+  content: "\e907";
+}
+.fa-codepen:before {
+  content: "\e908";
+}
+.fa-deviantart:before {
+  content: "\e909";
+}
+.fa-digg:before {
+  content: "\e90a";
+}
+.fa-dribbble:before {
+  content: "\e90b";
+}
+.fa-dropbox:before {
+  content: "\e90c";
+}
+.fa-etsy:before {
+  content: "\e90d";
+}
+.fa-facebook:before {
+  content: "\e90e";
+}
+.fa-facebook-f:before {
+  content: "\e90f";
+}
+.fa-figma:before {
+  content: "\e910";
+}
+.fa-flickr:before {
+  content: "\e911";
+}
+.fa-github:before {
+  content: "\e912";
+}
+.fa-google:before {
+  content: "\e913";
+}
+.fa-google-drive:before {
+  content: "\e914";
+}
+.fa-google-play:before {
+  content: "\e915";
+}
+.fa-hubspot:before {
+  content: "\e916";
+}
+.fa-imdb:before {
+  content: "\e917";
+}
+.fa-instagram:before {
+  content: "\e918";
+}
+.fa-itunes:before {
+  content: "\e919";
+}
+.fa-jsfiddle:before {
+  content: "\e91a";
+}
+.fa-kickstarter:before {
+  content: "\e91b";
+}
+.fa-linkedin:before {
+  content: "\e91c";
+}
+.fa-linkedin-in:before {
+  content: "\e91d";
+}
+.fa-medium:before {
+  content: "\e91e";
+}
+.fa-paypal:before {
+  content: "\e91f";
+}
+.fa-pinterest:before {
+  content: "\e920";
+}
+.fa-pinterest-p:before {
+  content: "\e921";
+}
+.fa-product-hunt:before {
+  content: "\e922";
+}
+.fa-reddit:before {
+  content: "\e923";
+}
+.fa-shopify:before {
+  content: "\e924";
+}
+.fa-skype:before {
+  content: "\e925";
+}
+.fa-slack:before {
+  content: "\e926";
+}
+.fa-soundcloud:before {
+  content: "\e927";
+}
+.fa-spotify:before {
+  content: "\e928";
+}
+.fa-stack-overflow:before {
+  content: "\e929";
+}
+.fa-steam:before {
+  content: "\e92a";
+}
+.fa-stripe:before {
+  content: "\e92b";
+}
+.fa-tiktok:before {
+  content: "\e92c";
+}
+.fa-tumblr:before {
+  content: "\e92d";
+}
+.fa-twitch:before {
+  content: "\e92e";
+}
+.fa-twitter:before {
+  content: "\e92f";
+}
+.fa-viber:before {
+  content: "\e930";
+}
+.fa-vimeo:before {
+  content: "\e931";
+}
+.fa-vimeo-v:before {
+  content: "\e932";
+}
+.fa-whatsapp:before {
+  content: "\e933";
+}
+.fa-yelp:before {
+  content: "\e934";
+}
+.fa-youtube:before {
+  content: "\e935";
+}

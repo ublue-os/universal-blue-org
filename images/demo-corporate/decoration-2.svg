@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="513" viewBox="0 0 1600 513">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #119d60;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+      @media only screen and (max-width: 768px) {
+        .cls-1 {
+          stroke-width: 3px;
+        }
+      }
+    </style>
+  </defs>
+  <path id="Line" class="cls-1" d="M-1,508.594S22.795,333.753,71.089,333.753c31.039,0,46.832,88.747,55.068,114.9,16.438,52.191,86.106,133.878,212.261-67.938C479.215,155.469,695.391,126.828,895.1,223.853c191.249,92.913,480.619,86.929,604.739-42.961C1610.53,65.068,1599.97-4.939,1599.97-4.939"/>
+</svg>
