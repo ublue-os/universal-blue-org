@@ -3485,6 +3485,10 @@ html:not(.mobile) .wow-p{
  * Logo (in navigation panel)
  */
 
+.ublue-logo {
+    font-family:'Red Hat Display';
+    weight: 300;
+}
 .nav-logo-wrap{
     position: absolute;
     top: 0;
@@ -3541,7 +3545,6 @@ a.logo:hover{
     z-index: 1030;
     transition: all 0.2s var(--ease-default);
 }
-.main-nav:not(.body-scrolled) h2,
 .main-nav:not(.body-scrolled) a {
     color: #fff!important;
 }
