@@ -3546,8 +3546,7 @@ a.logo:hover{
     transition: all 0.2s var(--ease-default);
 }
 .main-nav.body-scrolled {
-  background-color: #4051b5;
-  backdrop-filter: none;
+  background-color: #4051b5cc;
 }
 .main-nav a {
     color: #fff!important;
