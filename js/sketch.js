@@ -30,9 +30,7 @@ function setup() {
 }
 
 function draw() {
-  var height = window.scrollY;
-  var winheight = window.innerHeight;
-  if (document.hasFocus() && height <= winheight) {
+  if (document.hasFocus() && window.scrollY <= window.innerHeight) {
     background(0, 10);
     for(let i = 0; i < num; i ++) {
       let p = particles[i];
