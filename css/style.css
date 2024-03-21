@@ -2375,6 +2375,9 @@ textarea:-webkit-autofill:focus{
     right:0;
     margin:auto;
 }
+.home-content .col-md-6 > div {
+    margin: auto;
+}
 
 /*
  * Scroll down icon
