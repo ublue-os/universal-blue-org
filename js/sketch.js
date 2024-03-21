@@ -20,6 +20,7 @@ function setup() {
   noiseSeed(seed);
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent('sketch-holder');
+  canvas.style('display', 'block');
   for(let i = 0; i < num; i ++) {
     particles.push(createVector(random(width), random(height)));
   }
