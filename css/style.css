@@ -3545,8 +3545,17 @@ a.logo:hover{
     z-index: 1030;
     transition: all 0.2s var(--ease-default);
 }
-.main-nav:not(.body-scrolled) a {
+.main-nav.body-scrolled {
+  background-color: #4051b5;
+  backdrop-filter: none;
+}
+.main-nav a {
     color: #fff!important;
+}
+.mobile-nav-icon,
+.mobile-nav-icon::before,
+.mobile-nav-icon::after {
+    background: #fff!important;
 }
 .main-nav.sticky{
     position: -webkit-sticky;
