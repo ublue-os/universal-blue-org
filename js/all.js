@@ -47,7 +47,9 @@
    /* --------------------------------------------
      Page loader
      --------------------------------------------- */
-    function init_loader(){   
+    function init_loader(){
+        var currentDate = new Date();
+        $('#current-year').text(currentDate.getFullYear());
         $(".page-loader div").fadeOut();
         $(".page-loader").delay(250).fadeOut("slow");
     }
