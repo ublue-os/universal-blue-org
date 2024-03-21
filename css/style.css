@@ -3487,7 +3487,8 @@ html:not(.mobile) .wow-p{
 
 .ublue-logo {
     font-family:'Red Hat Display';
-    weight: 300;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 .nav-logo-wrap{
     position: absolute;
