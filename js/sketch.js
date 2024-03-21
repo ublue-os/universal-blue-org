@@ -1,7 +1,7 @@
 let particles = [];
 const num = 500;
 
-const noiseScale = 0.01/9;
+const noiseScale = 0.01/3;
 
 function setup() {
   let str = "1a5652bae6b1e0f0b315814a52d7953326b17b676157f58cd3b2d7f4e707ad61";
