@@ -3,8 +3,14 @@ const num = 500;
 
 const noiseScale = 0.01/9;
 
+function getRandomImage() {
+  const image = ["bazzite", "bluefin", "ucore", "aurora"];
+  const randomIndex = Math.floor(Math.random() * image.length);
+  return image[randomIndex];
+}
+
 function setup() {
-  let str = "1a5652bae6b1e0f0b315814a52d7953326b17b676157f58cd3b2d7f4e707ad61";
+  let str = getRandomImage();
   let seed = 0;
   for (let i = 0; i < str.length; i++) {
       seed += str.charCodeAt(i);
