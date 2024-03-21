@@ -52,3 +52,7 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
+function onScreen(v) {
+  return v.x >= 0 && v.x <= width && v.y >= 0 && v.y <= height;
+}
