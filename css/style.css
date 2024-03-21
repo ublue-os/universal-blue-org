@@ -10847,6 +10847,11 @@ a.blog-item-more:hover{
     border: 1px solid var(--color-dark-1);
 }
 
+/* Contributions Slider */
+#metrics .features-item {
+    margin: auto;
+}
+
 /* Features slider */
 .item-carousel .owl-prev{
     left: -30px;
