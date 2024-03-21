@@ -23,17 +23,21 @@ function setup() {
 }
 
 function draw() {
-  background(0, 10);
-  for(let i = 0; i < num; i ++) {
-    let p = particles[i];
-    point(p.x, p.y);
-    let n = noise(p.x * noiseScale, p.y * noiseScale, frameCount * noiseScale * noiseScale);
-    let a = TAU * n;
-    p.x += cos(a);
-    p.y += sin(a);
-    if(!onScreen(p)) {
-      p.x = random(width);
-      p.y = random(height);
+  var height = window.scrollY;
+  var winheight = window.innerHeight;
+  if (document.hasFocus() && height <= winheight) {
+    background(0, 10);
+    for(let i = 0; i < num; i ++) {
+      let p = particles[i];
+      point(p.x, p.y);
+      let n = noise(p.x * noiseScale, p.y * noiseScale, frameCount * noiseScale * noiseScale);
+      let a = TAU * n;
+      p.x += cos(a);
+      p.y += sin(a);
+      if(!onScreen(p)) {
+        p.x = random(width);
+        p.y = random(height);
+      }
     }
   }
 }
