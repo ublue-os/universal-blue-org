@@ -4,7 +4,7 @@ const num = 500;
 const noiseScale = 0.01/9;
 
 function getRandomImage() {
-  const image = ["bazzite", "bluefin", "ucore", "aurora"];
+  const image = ["bazzite", "bluefin", "ucore", "aurora", "ublue"];
   const randomIndex = Math.floor(Math.random() * image.length);
   return image[randomIndex];
 }
