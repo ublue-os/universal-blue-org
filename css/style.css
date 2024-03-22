@@ -1194,7 +1194,7 @@ hr.thick{
 .link-hover-anim:hover,
 .link-flat:hover{
     text-decoration: none !important;
-    color: #4a4a4a;
+    color: #666;
 }
 .link-to-top i {
     margin-left: -3px;
