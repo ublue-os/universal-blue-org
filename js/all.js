@@ -989,6 +989,19 @@ function init_page_sliders(){
             afterInit: owl_keynav,
             afterAction: owl_update
         });
+
+        $.fn.randomize = function(selector){
+          var $elems = selector ? $(this).find(selector) : $(this).children(),
+          $parents = $elems.parent();
+
+          $parents.each(function(){
+            $(this).children(selector).sort(function(){
+                return Math.round(Math.random()) - 0.5;
+            }).detach().appendTo(this);
+          });
+
+          return this;
+        };
         
         // Fullwidth slider fade
         $(".fullwidth-slider-fade").addClass("autoplay");

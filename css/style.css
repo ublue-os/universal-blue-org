@@ -3539,9 +3539,15 @@ html:not(.mobile) .wow-p{
     height: var(--menu-bar-height);
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
+.main-nav .logo img {
+    height: 40px;
+    width: 40px;
+    margin-top: -3px;
+}
 .nav-logo-wrap .logo > h2 {
-  white-space: nowrap;
-  margin-top: 15px;
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 .nav-logo-wrap .logo img{
     max-height: 100%;
@@ -10950,6 +10956,18 @@ a.blog-item-more:hover{
     right: -20px;
 }
 
+#home .home-content .row .align-items-center > div::before {
+    content: '';
+    background-image: url("images/logo.webp");
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    background-size: contain;
+    margin-left: -240px;
+    margin-top: -15px;
+}
+
 @media only screen and (max-width: 991px) {
     #images .features-item > .align-items-start {
         display: none !important;
@@ -10957,7 +10975,14 @@ a.blog-item-more:hover{
     }
 
     #community .alt-features-item {
-      margin: auto;
+        margin: auto;
+    }
+
+    #home .home-content .row .align-items-center > div::before {
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -250px;
     }
 }
 
