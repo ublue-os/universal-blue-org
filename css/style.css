@@ -778,6 +778,14 @@ blockquote footer{
     font-size: 15px;
     font-weight: 400;
 }
+.blockquote {
+    display: inline-block;
+    width: 100%;
+    border-left: 5px solid #ccc;
+    margin: 5px 10px 20px 10px;
+    padding-left: 10px;
+    color: #555;
+}
 .footer i {
   width: 20px;
   text-align: center;
@@ -978,6 +986,10 @@ hr.thick{
     .hs-title-overlap{ 
         width: 137% !important; 
         margin-right: -37%;
+    }
+
+    #community .alt-features-item {
+        padding-left: 60px;
     }
 }
 .hs-title-1{
@@ -3553,7 +3565,7 @@ a.logo:hover{
     transition: all 0.2s var(--ease-default);
 }
 .main-nav.body-scrolled {
-  background-color: #4051b5cc;
+  background-color: #4051b5;
 }
 .main-nav a {
     color: #fff!important;
@@ -3828,8 +3840,7 @@ a.logo:hover{
     width: 100vw !important;
     margin-left: 50%;
     transform: translateX(-50%);
-    background: #4051b5cc;
-    backdrop-filter: blur(10px);
+    background: #4051b5;
 }
 .mobile-on .desktop-nav ul{
     position: relative;
@@ -7933,6 +7944,11 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     background-size: 100% 1px;
 }
 
+/* About Section */
+#about ul {
+    font-size: 16px;
+}
+
 /* Images Section */
 #images .btn {
     width: auto;
@@ -8618,6 +8634,11 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     opacity: 1;
 }
 
+.logo-grid-img {
+    max-height: 42px;
+    width: auto;
+    opacity: 1;
+}
 
 /* ==============================
    Post previews
@@ -10905,6 +10926,10 @@ a.blog-item-more:hover{
     #images .features-item > .align-items-start {
         display: none !important;
         visibility: hidden;
+    }
+
+    #community .alt-features-item {
+      margin: auto;
     }
 }
 

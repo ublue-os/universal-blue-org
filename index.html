@@ -169,24 +169,68 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         
                         <div class="row wow fadeInUp" data-wow-delay="0.5s">
                             
-                            <h4 class="h5">Custom Operating System images based on Fedora Atomic</h4>
-                            
-                            <p class="text-gray">
-                                Universal Blue is a collection of container images using Fedora's support for OCI/Docker containers as a transport and delivery mechanism for operating system content. That's nerdspeak for the ultimate Linux client: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended.
-                            </p>
-                            
-                            <h4 class="h5">Our Vision</h4>
-                            
-                            <p class="text-gray">
-                                We then use this information to create a custom website that not only reflects your brand but also helps you achieve your business objectives. From responsive design to intuitive navigation, we focus on every detail.
-                            </p>
-                            
+                            <span style="font-weight:300;">
+                                Universal Blue is a collection of <a href="https://en.wikipedia.org/wiki/Continuous_delivery">continuously delivered</a> images using <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora Atomic</a>'s support for OCI/Docker containers as a <a href="https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable" target="_blank">transport and delivery mechanism for operating system content</a>. <strong>That's nerdspeak for the ultimate Linux client</strong>: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended.<br>
+                                <br>
+                                Universal Blue provides a more <a href="https://en.wikipedia.org/wiki/Cloud-native_computing" target="_blank">cloud-native</a> approach to running Linux on your desktop. We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today. This is achieved by reusing cloud technologies as a delivery mechanism to deliver a more reliable experience.
+                                <br>
+                                <br>
+                                <h4>Advantages over traditional Linux desktops</h4>
+                                <ul>
+                                    <li>Reliable, atomic updates with built in rollback</li>
+                                    <li>Known-good state and fewer failures
+                                        <ul>
+                                            <li>Significantly reduced configuration drift</li>
+                                            <li>Kernel mods preinstalled on the image - including Nvidia drivers</li>
+                                        </ul>
+                                    </li>
+                                    <li>Clean separation of the base system from applications and your data
+                                        <ul>
+                                            <li>Integration of Flatpak applications via <a href="https://flathub.org/home" target="_blank">Flathub</a>.</li>
+                                            <li><a href="https://github.com/containers/toolbox" target="_blank">Toolbox</a> and <a href="https://github.com/89luca89/distrobox" target="_blank">Distrobox</a> support, run applications from any distribution in a containerized environment</li>
+                                        </ul>
+                                    </li>
+                                    <li>Unbridled customization
+                                        <ul>
+                                            <li>Craft your perfect image from scratch or derive from others</li>
+                                        </ul>
+                                    </li>
+                                    <li>Community Maintained
+                                        <ul>
+                                            <li>The project is maintained by a community of cloud-native contributors with an <a href="https://universal-blue.org/mission">explicit mission</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>Reuses standards-based tooling from cloud
+                                        <ul>
+                                            <li>Built using ostree-enabled <a href="https://opencontainers.org/" target="_blank">OCI compliant images</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>Built-in container tools for developers
+                                        <ul>
+                                            <li>Consume packages and software from any repo without risking breakage on the client</li>
+                                            <li>Easy consumption of other OCI images, if it's on the <a href="https://landscape.cncf.io/" target="_blank">CNCF Landscape</a> it's a first class citizen thanks to Podman!</li>
+                                        </ul>
+                                    </li>
+                                    <li>Images signed with standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a></li>
+                                    <li>Hosted on <a href="https://github.com/features/packages" target="_blank">ghcr.io</a>:
+                                        <ul>
+                                            <li>Ninety (90) days of image archives allowing for flexible rollback options</li>
+                                            <li>Globally distributed via CDN for fast image downloads, thanks Microsoft!</li>
+                                        </ul>
+                                    </li>
+                                    <li>Rebase back to <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora</a> without reinstallation. This is why we don't call it a distribution, it's an atomic layer of customization on an existing distribution that can be removed.</li>
+                                </ul>
+                            </span>
                         </div>
                     
                     </div>
                 </section>
                 <!-- End About Section -->
                 
+                <!-- Divider -->
+                <hr class="mt-0 mb-0"/>
+                <!-- End Divider -->
+
                 <!-- Logotypes Section-->
                 <section class="page-section">
                     <div class="container position-relative">
@@ -194,17 +238,18 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                         <div class="row">                            
                             <div class="col-md-8 offset-md-2 text-center">
                                 
-                                <h2 class="section-title-tiny mb-30">Universal Blue is made up of alumni of companies like:</h2>
+                                <h2 class="section-title-tiny mb-30">Universal Blue is made up of alumni from companies like:</h2>
                                 
                                 <div class="logo-grid">                                    
-                                    <img class="logo-grid-img" src="images/clients-logos/logo-grid/logo-1.png" width="110" height="33" alt="Image description is here" />
-                                    <img class="logo-grid-img" src="images/clients-logos/logo-grid/logo-2.png" width="119" height="33" alt="Image description is here" />
-                                    <img class="logo-grid-img" src="images/clients-logos/logo-grid/logo-3.png" width="79" height="33" alt="Image description is here" />
-                                    <img class="logo-grid-img" src="images/clients-logos/logo-grid/logo-4.png" width="122" height="33" alt="Image description is here" />
-                                    <img class="logo-grid-img" src="images/clients-logos/logo-grid/logo-5.png" width="100" height="33" alt="Image description is here" />
+                                    <img class="logo-grid-img" src="images/companies/redhat.svg" width="613" height="145" alt="Red Hat" />
+                                    <img class="logo-grid-img" src="images/companies/canonical.svg" width="1329" height="400" alt="Canonical" />
+                                    <img class="logo-grid-img" src="images/companies/microsoft.svg" width="338" height="72" alt="Microsoft" />
+                                    <img class="logo-grid-img" src="images/companies/cncf.svg" width="399" height="76" alt="
+Cloud Native Computing Foundation (CNCF) " />
+
                                 </div>
 
-                                <h6 style="margin-top:30px; font-weight:300;">And community members like you!</h6>
+                                <h6 style="margin-top:30px; font-weight:300;">And community members like you! We're always looking for people to help, all skill levels and areas of expertise are welcome.</h6>
                                 
                             </div>                            
                         </div>
@@ -325,7 +370,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                 <div class="col-lg-6">
                                                     <div class="alt-features-item">
                                                         <div class="alt-features-icon">
-                                                            <i class="fa-solid fa-microchip"></i>
+                                                            <i class="fa-solid fa-laptop"></i>
                                                         </div>
                                                         <h3 class="alt-features-title">Expanded Hardware Support</h3>
                                                         <div class="alt-features-descr">
@@ -395,7 +440,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                                         <div class="alt-features-icon">
                                                             <i class="fa-solid fa-microchip"></i>
                                                         </div>
-                                                        <h3 class="alt-features-title">Expanded Hardware Support</h3>
+                                                        <h3 class="alt-features-title">Compute-ready</h3>
                                                         <div class="alt-features-descr">
                                                             Optional support for Nvidia hardware, including containerized CUDA workloads.
                                                         </div>
@@ -454,12 +499,14 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                     
                                 <h3 class="section-title-small mb-40">Community</h3>
                                 
+                                <span class="text-gray">If you want to learn, come hang out. We are here to teach and learn from each other!</span>
+
                             </div>
                             <!-- End Text -->
                             
                             <!-- Feature Item -->
                             <div class="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30">
-                                <div class="alt-features-item border-left mt-0">
+                                <div class="alt-features-item mt-0">
                                     <div class="alt-features-icon">
                                         <i class="fa-brands fa-discord"></i>
                                     </div>
@@ -473,7 +520,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             
                             <!-- Feature Item -->
                             <div class="col-md-4 col-lg-3 d-flex align-items-stretch mb-sm-30">
-                                <div class="alt-features-item border-left mt-0">
+                                <div class="alt-features-item mt-0">
                                     <div class="alt-features-icon">
                                         <i class="fa-brands fa-discourse"></i>
                                     </div>
@@ -487,7 +534,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             
                             <!-- Feature Item -->
                             <div class="col-md-4 col-lg-3 d-flex align-items-stretch">
-                                <div class="alt-features-item border-left mt-0">
+                                <div class="alt-features-item mt-0">
                                     <div class="alt-features-icon">
                                         <i class="fa-brands fa-mastodon"></i>
                                     </div>
@@ -527,7 +574,7 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                             </div>
                             
                             <div class="col-md-5 offset-md-1 text-start text-md-end pt-40 pt-sm-20">
-                                <a href="https://universal-blue.discourse.group/" class="link-flat underline align-middle" data-link-animate="y">Read more on discourse <i class="mi-arrow-right size-18"></i></a>
+                                <a href="https://universal-blue.discourse.group/" class="link-flat underline align-middle" data-link-animate="y">Read more on Discourse <i class="mi-arrow-right size-18"></i></a>
                             </div>
                             
                         </div>
@@ -640,6 +687,32 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                                 <!-- Footer Widget -->
                                 <div class="col-sm-4 mt-30">
                                     
+                                    <h3 class="fw-title">Documentation</h3>
+                                    
+                                    <ul class="fw-menu clearlist">
+                                        <li>
+                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                                Mission
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                                Values
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                                Proposals
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" rel="noopener nofollow" target="_blank">
+                                                Code of Conduct
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    
+
                                 </div>
                                 <!-- End Footer Widget -->   
 
