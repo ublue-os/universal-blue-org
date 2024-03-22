@@ -7933,6 +7933,12 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     background-size: 100% 1px;
 }
 
+/* Images Section */
+#images .btn {
+  width: auto;
+  margin: auto;
+  margin-top: 30px;
+}
 
 /* ==============================
    Call action 1 section
