@@ -7935,9 +7935,9 @@ a.portfolio-5-link:hover .portfolio-5-title span{
 
 /* Images Section */
 #images .btn {
-  width: auto;
-  margin: auto;
-  margin-top: 30px;
+    width: auto;
+    margin: auto;
+    margin-top: 30px;
 }
 
 /* ==============================
@@ -10882,17 +10882,30 @@ a.blog-item-more:hover{
 
 #metrics .owl-pagination,
 #images .owl-pagination {
-    bottom: -35px;
+    bottom: -45px;
 }
 
-#metrics .owl-prev,
-#images .owl-prev {
+#metrics .owl-prev {
     left: -30px;
 }
 
-#metrics .owl-next,
-#images .owl-next {
+#images .owl-prev {
+    left: -20px;
+}
+
+#metrics .owl-next {
     right: -30px;
+}
+
+#images .owl-next {
+    right: -20px;
+}
+
+@media only screen and (max-width: 991px) {
+    #images .features-item > .align-items-start {
+        display: none !important;
+        visibility: hidden;
+    }
 }
 
 /* Features slider */
