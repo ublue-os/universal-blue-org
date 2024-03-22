@@ -10937,7 +10937,11 @@ a.blog-item-more:hover{
 
 /* Community */
 #community .alt-features-item {
-  text-align: center;
+    text-align: center;
+}
+
+#community .alt-features-title {
+    white-space: nowrap;
 }
 
 #community .alt-features-icon {
