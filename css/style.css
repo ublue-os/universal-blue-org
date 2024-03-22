@@ -10852,6 +10852,18 @@ a.blog-item-more:hover{
     margin: auto;
 }
 
+#metrics .owl-pagination {
+    bottom: -35px;
+}
+
+#metrics .owl-prev {
+    left: -30px;
+}
+
+#metrics .owl-next {
+    right: -30px;
+}
+
 /* Features slider */
 .item-carousel .owl-prev{
     left: -30px;
