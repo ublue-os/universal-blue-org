@@ -836,7 +836,11 @@
 @media only screen and (max-width: 480px) {
     
     .home-content {
-      top: 70px;
+        top: 70px;
+    }
+
+    .footer {
+        text-align: center;
     }
 
     .full-wrapper{
