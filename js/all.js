@@ -1237,7 +1237,7 @@ function init_work_filter(){
             $(".filter").removeClass("active").attr("aria-pressed", "false");
             $(this).addClass("active").attr("aria-pressed", "true");
             fselector = $(this).attr("data-filter");
-            var transition_duration = "0.3s";
+            var transition_duration = "0.25s";
             if (($("body").hasClass("appear-animate")) && (!($("html").hasClass("mobile")) && (work_grid.find(".wow-p").length))) {
                 transition_duration = 0;
             }
