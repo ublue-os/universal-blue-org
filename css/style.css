@@ -10959,16 +10959,10 @@ a.blog-item-more:hover{
     right: -20px;
 }
 
-#home .home-content .row .align-items-center > div::before {
-    content: '';
-    background-image: url("../images/logo.webp");
-    width: 200px;
-    height: 200px;
-    display: block;
-    position: absolute;
-    background-size: contain;
-    margin-left: -240px;
-    margin-top: -15px;
+.main-logo {
+    position: relative;
+    left: -30px;
+    top: -45px;
 }
 
 @media only screen and (max-width: 991px) {
@@ -10981,15 +10975,16 @@ a.blog-item-more:hover{
         margin: auto;
     }
 
-    #home .home-content .row .align-items-center > div::before {
-        left: 0;
-        right: 0;
+    .main-logo {
+        left: inherit;
+        top: inherit;
         margin: auto;
-        top: -250px;
+        margin-bottom: 30px;
     }
 
-    .home-content {
-        top: 70px;
+    .home-content .align-items-center {
+        display: block !important;
+        text-align: center;
     }
 }
 
