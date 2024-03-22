@@ -4099,10 +4099,10 @@ a.logo:hover{
 .main-nav.dark-mode{
     background-color: rgba(27,27,27, .905);
 }
-.main-nav:not(.transparent){
+/*.main-nav:not(.transparent){
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-}
+}*/
 .main-nav.dark .inner-nav ul > li > a{
     color: #fff;
     opacity: .78;
