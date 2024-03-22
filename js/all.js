@@ -405,7 +405,7 @@
                 active_link.addClass("active");
             });
             
-            if($('.desktop-nav a.active').length > 0) {
+            if($('.desktop-nav a.active').length > 0 || $("#us, footer").filter(":in-viewport:first").length > 0) {
                 $('footer .local-scroll').addClass('scroll-visible');
             } else {
                 $('footer .local-scroll').removeClass('scroll-visible');
