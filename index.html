@@ -67,7 +67,6 @@
                     <div class="nav-logo-wrap local-scroll">
                         <a href="#top" class="logo">
                             <img src="images/logo.webp" alt="Universal Blue" width="400" height="400" />
-                            <h2 class="ublue-logo">Universal Blue</h2>
                         </a>
                     </div>
                     
@@ -165,7 +164,7 @@
                             
                         </div>
                         
-                        <div class="row wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row wow fadeInUp" data-wow-delay="0.25s">
                             
                             <span style="font-weight:300;">
                                 Universal Blue is a collection of <a href="https://en.wikipedia.org/wiki/Continuous_delivery">continuously delivered</a> images using <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora Atomic</a>'s support for OCI/Docker containers as a <a href="https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable" target="_blank">transport and delivery mechanism for operating system content</a>. <strong>That's nerdspeak for the ultimate Linux client</strong>: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended.<br>
@@ -189,7 +188,7 @@
                                     </li>
                                     <li>Community Maintained
                                         <ul>
-                                            <li>The project is maintained by a community of cloud-native contributors with an <a href="https://universal-blue.org/mission">explicit mission</a></li>
+                                            <li>The project is maintained by a community of cloud-native contributors with an <a href="https://github.com/ublue-os/website/blob/main/docs/mission.md">explicit mission</a></li>
                                         </ul>
                                     </li>
                                     <li>Images signed with standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a></li>
@@ -431,11 +430,13 @@
                                         <div class="wow fadeInUp" data-wow-duration="1.2s" data-wow-offset="205">
                                             
                                             <div class="row" style="margin-bottom:30px;">
-                                                <i class="fa-solid fa-wrench" style="font-size:60px;margin-bottom:10px;color:#4051b5;"></i>
-                                                <h3>Your Custom Image!</h3>
-                                                <span>Universal Blue images are endlessly customizable and may be derived into new images through the use of container files.<br>
-                                                <br>
-                                                If you're building your own custom images feel free to add them to <a href="https://universal-blue.discourse.group/docs?topic=340" targt="_blank">our awesome list</a>!</span>
+                                                <i class="fa-solid fa-wrench" style="font-size:75px;margin-bottom:10px;color:#4051b5;"></i>
+                                                <h3>Your custom image!</h3>
+                                                <div style="width: 100%;">
+                                                    <span style="max-width: 900px;margin: auto;display: inline-block;">Universal Blue images are endlessly customizable and may be derived into new images through the use of container files and our GitHub build actions.</span>
+                                                </div>
+                                                <a href="https://github.com/ublue-os/website/blob/main/docs/guide/fork-your-own.md" target="_blank" class="btn btn-mod btn-large btn-round btn-hover-anim"><span>More Info</span></a>
+                                                <span style="color:#555;margin-top:30px;">If you're building your own custom images feel free to add them to <a href="https://universal-blue.discourse.group/docs?topic=340" targt="_blank">our awesome list</a>!</span>
                                             </div>
                                             
                                         </div>                                
@@ -637,7 +638,7 @@
                                 <h2 class="section-title-tiny mb-30">Universal Blue is made up of alumni from companies like:</h2>
                                 
                                 <div class="logo-grid">
-                                    <img class="logo-grid-img" src="images/companies/aws.svg" width="1329" height="400" alt="Amazon Web Services (AWS)" />
+                                    <img class="logo-grid-img" src="images/companies/aws.svg" width="304" height="182" alt="Amazon Web Services (AWS)" />
                                     <img class="logo-grid-img" src="images/companies/canonical.svg" width="1329" height="400" alt="Canonical" />
                                     <img class="logo-grid-img" src="images/companies/chainguard.webp" width="399" height="76" alt="Chainguard" />
                                     <img class="logo-grid-img" src="images/companies/cncf.svg" width="399" height="76" alt="Cloud Native Computing Foundation (CNCF)" />
@@ -645,8 +646,8 @@
                                     <img class="logo-grid-img" src="images/companies/redhat.svg" width="613" height="145" alt="Red Hat" />
                                 </div>
 
-                                <h6 style="margin-top:30px;margin-bottom:0px;font-weight:300;">And community members like you!<br>We're always looking for people to help, all skill levels and areas of expertise are welcome.</h6>
-                                <span style="font-size:12px;color:#8e8e8e;">Universal Blue is not affiliated with any of the above companies.</span>
+                                <h6 style="margin-top:30px;margin-bottom:0px;font-weight:300;"><strong style="font-size:18px;">And community members like you!</strong><br>We're always looking for people to help, all skill levels and areas of expertise are welcome.</h6>
+                                <span style="font-size:12px;color:#8e8e8e;margin-top: 10px;display: inline-block;">Universal Blue is not affiliated with any of the above companies.</span>
                                 
                             </div>                            
                         </div>
@@ -665,8 +666,7 @@
                         <div style="text-align:center;" class="col-md-4 col-lg-3 text-gray mb-sm-50">
                             
                             <div class="mb-30 footer-logo">
-                                <img src="images/logo.webp" width="120" height="120" alt="Universal Blue" />
-                                <h2 class="ublue-logo">Universal Blue</h2>
+                                <img src="images/logo.webp" width="100" height="100" alt="Universal Blue" />
                             </div>
                             
                             <p>
@@ -679,13 +679,13 @@
                             <div class="row mt-n30">
                                 
                                 <!-- Footer Widget -->
-                                <div class="col-sm-4 mt-30">
+                                <!--<div class="col-sm-4 mt-80">
                                     
-                                </div>
+                                </div>-->
                                 <!-- End Footer Widget -->
                                 
                                 <!-- Footer Widget -->
-                                <div class="col-sm-4 mt-30">
+                                <div class="col-sm-6 mt-80">
                                     
                                     <h3 class="fw-title">Documentation</h3>
                                     
@@ -717,7 +717,7 @@
                                 <!-- End Footer Widget -->   
 
                                 <!-- Footer Widget -->
-                                <div class="col-sm-4 mt-30">
+                                <div class="col-sm-6 mt-80">
                                     
                                     <h3 class="fw-title">Social Media</h3>
                                     

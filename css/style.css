@@ -10937,7 +10937,7 @@ a.blog-item-more:hover{
 
 #metrics .owl-pagination,
 #images .owl-pagination {
-    bottom: -45px;
+    bottom: -60px;
 }
 
 #metrics .owl-prev {
@@ -10983,6 +10983,10 @@ a.blog-item-more:hover{
         right: 0;
         margin: auto;
         top: -250px;
+    }
+
+    .home-content {
+        top: 70px;
     }
 }
 
