@@ -796,6 +796,10 @@
   
 @media only screen and (max-width: 575px) { 
 
+    .footer {
+        text-align: center;
+    }
+
     .form input.newsletter-field,
     .form .newsletter-field-wrap{
         display: block;
@@ -834,14 +838,6 @@
 }
     
 @media only screen and (max-width: 480px) {
-    
-    .home-content {
-        top: 70px;
-    }
-
-    .footer {
-        text-align: center;
-    }
 
     .full-wrapper{
         --full-wrapper-margin-x: 20px;

@@ -10984,6 +10984,10 @@ a.blog-item-more:hover{
         margin: auto;
         top: -250px;
     }
+
+    .home-content {
+        top: 70px;
+    }
 }
 
 /* Features slider */
