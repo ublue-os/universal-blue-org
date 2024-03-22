@@ -8664,6 +8664,10 @@ a.portfolio-5-link:hover .portfolio-5-title span{
     opacity: 1;
 }
 
+.logo-grid-img:hover {
+  transform: scale(1.1);
+}
+
 /* ==============================
    Post previews
    ============================== */
