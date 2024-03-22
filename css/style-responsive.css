@@ -836,9 +836,9 @@
 @media only screen and (max-width: 480px) {
     
     .home-content {
-      top: 50px;
+      top: 70px;
     }
-    
+
     .full-wrapper{
         --full-wrapper-margin-x: 20px;
     }
