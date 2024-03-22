@@ -1196,6 +1196,14 @@ hr.thick{
     text-decoration: none !important;
     color: #4a4a4a;
 }
+.main-nav .link-flat {
+    opacity: .65;
+    color: #fff;
+}
+.main-nav .link-flat:hover {
+    opacity: 1;
+    color: #fff;
+}
 .main-nav .link-hover-anim{
     top: 1px;
 }
