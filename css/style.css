@@ -1199,11 +1199,13 @@ hr.thick{
 .link-to-top i {
     margin-left: -3px;
 }
-.main-nav .link-flat {
+.main-nav .link-flat,
+#home .link-flat {
     opacity: .65;
     color: #fff;
 }
-.main-nav .link-flat:hover {
+.main-nav .link-flat:hover,
+#home .link-flat:hover {
     opacity: 1;
     color: #fff;
 }
