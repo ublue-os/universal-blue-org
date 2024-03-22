@@ -10890,8 +10890,8 @@ a.blog-item-more:hover{
     z-index: 1000 !important;
 }
 .owl-page span{
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
     display: block;
     background: none;
     border: 1px solid var(--color-dark-1);
