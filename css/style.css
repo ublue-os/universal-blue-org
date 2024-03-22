@@ -10958,7 +10958,7 @@ a.blog-item-more:hover{
 
 #home .home-content .row .align-items-center > div::before {
     content: '';
-    background-image: url("images/logo.webp");
+    background-image: url("../images/logo.webp");
     width: 200px;
     height: 200px;
     display: block;
