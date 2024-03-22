@@ -1319,7 +1319,7 @@ hr.thick{
 /* ==============================
    Buttons
    ============================== */
-  
+
 .btn-mod,
 a.btn-mod{
     -webkit-box-sizing: border-box;
@@ -1835,6 +1835,10 @@ a:not(.no-hover):hover .btn-animate-y-2{
     background:	linear-gradient(to right, var(--color-dark-1), var(--color-dark-1)), var(--gradient-primary-1-b); 
 	-webkit-background-clip: padding-box, border-box;
 	background-origin: padding-box, border-box;
+}
+
+.btn-mod, a.btn-mod {
+    background: #4051b5;
 }
 
 /* 
@@ -4236,7 +4240,14 @@ a.logo:hover{
 #home,
 #home .section-descr,
 #home .section-caption {
-  color: #fff;
+    color: #fff;
+}
+
+#home h1,
+#home p,
+#home span.link-strong,
+.main-nav:not(.body-scrolled) a {
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .page-section,
