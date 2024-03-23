@@ -632,6 +632,19 @@
         text-align: center;
     }
 
+    #community span.text-gray {
+        display: inline-block;
+    }
+
+    #images h2 {
+        margin-bottom: 50px !important;
+    }
+
+    #metrics .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     .text-start {
         text-align: center!important;
     }
