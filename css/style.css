@@ -11025,6 +11025,10 @@ a.blog-item-more:hover{
     .alt-features-icon {
         font-size: 24px;
     }
+
+    .features-item img {
+        max-height: 110px !important;
+    }
 }
 
 /* Features slider */
