@@ -4281,6 +4281,10 @@ a.logo:hover{
     text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
+.inner-nav.js-opened a {
+    text-shadow: none !important;
+}
+
 .page-section,
 .small-section,
 .bg-image{
@@ -11012,6 +11016,14 @@ a.blog-item-more:hover{
     .main-logo {
         width: 100px;
         margin-bottom: 10px;
+    }
+
+    footer .col-md-7.clearfix {
+        margin-bottom: 50px;
+    }
+
+    .alt-features-icon {
+        font-size: 24px;
     }
 }
 
