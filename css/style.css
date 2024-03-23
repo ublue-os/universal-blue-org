@@ -4302,7 +4302,7 @@ body.simple-page .row > ul {
 }
 
 .inner-nav.js-opened .link-flat {
-    opacity: 1;
+    opacity: 1!important;
 }
 
 .page-section,
