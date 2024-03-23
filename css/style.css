@@ -4285,6 +4285,10 @@ a.logo:hover{
     text-shadow: none !important;
 }
 
+.inner-nav.js-opened .link-flat {
+    opacity: 1;
+}
+
 .page-section,
 .small-section,
 .bg-image{
