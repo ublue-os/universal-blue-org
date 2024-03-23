@@ -1211,12 +1211,12 @@ hr.thick{
 .link-to-top i {
     margin-left: -3px;
 }
-.main-nav .link-flat,
+body:not(.simple-page) .main-nav .link-flat,
 #home .link-flat {
     opacity: .65;
     color: #fff;
 }
-.main-nav .link-flat:hover,
+body:not(.simple-page) .main-nav .link-flat:hover,
 #home .link-flat:hover {
     opacity: 1;
     color: #fff;
@@ -3575,7 +3575,7 @@ a.logo:hover{
     text-decoration: none;
     color: rgba(0,0,0, .9);
 }
-.main-nav:not(.body-scrolled) .logo {
+body:not(.simple-page) .main-nav:not(.body-scrolled) .logo {
     opacity: 0;
 }
 
@@ -3602,8 +3602,11 @@ a.logo:hover{
 .main-nav.body-scrolled {
   background-color: #4051b5;
 }
-.main-nav a {
+body:not(.simple-page) .main-nav a {
     color: #fff!important;
+}
+body.simple-page .main-nav.body-scrolled a {
+    color: #fff;
 }
 .mobile-nav-icon,
 .mobile-nav-icon::before,
@@ -4277,7 +4280,7 @@ a.logo:hover{
 #home h1,
 #home p,
 #home span.link-strong,
-.main-nav:not(.body-scrolled) a {
+body:not(.simple-page) .main-nav:not(.body-scrolled) a {
     text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
