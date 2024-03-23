@@ -628,6 +628,14 @@
 
 @media only screen and (max-width: 767px) {
     
+    #metrics span, #metrics h3, #community span, #community h3, #news, #images h2, #about h3 {
+        text-align: center;
+    }
+
+    .text-start {
+        text-align: center!important;
+    }
+
     .fixed-height-small{
         height: 300px;
         min-height: 300px;

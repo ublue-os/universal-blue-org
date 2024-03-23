@@ -3551,6 +3551,15 @@ html:not(.mobile) .wow-p{
     height: var(--menu-bar-height);
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
+
+body:not(.simple-page) .nav-logo-wrap .logo {
+    opacity: 0;
+}
+
+body:not(.simple-page) .nav-logo-wrap .logo.scroll-visible {
+    opacity: 1;
+}
+
 .main-nav .logo img {
     height: 40px;
     width: 40px;
@@ -4282,6 +4291,10 @@ body.simple-page .main-nav.body-scrolled a {
 #home span.link-strong,
 body:not(.simple-page) .main-nav:not(.body-scrolled) a {
     text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+body.simple-page .row > ul {
+    margin-left: 30px;
 }
 
 .inner-nav.js-opened a {
