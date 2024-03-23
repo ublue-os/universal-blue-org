@@ -185,16 +185,16 @@
                                 <br>
                                 <h4>Advantages over traditional Linux desktops</h4>
                                 <ul>
-                                    <li>Reliable, atomic updates with built in rollback</li>
+                                    <li>Reliable, atomic updates with built in rollback<ul>
+                                        <li>Built using ostree-enabled <a href="https://opencontainers.org/" target="_blank">OCI compliant images</a></li>
+                                        <li>Hosted on <a href="https://github.com/features/packages" target="_blank">ghcr.io</a></li>
+                                        <li>Ninety (90) days of image archives allowing for flexible rollback options</li>
+                                        <li>Globally distributed via CDN for fast image downloads, thanks Microsoft!</li>
+                                    </ul></li>
                                     <li>Known-good state and fewer failures
                                         <ul>
                                             <li>Significantly reduced configuration drift</li>
                                             <li>Kernel mods preinstalled on the image - including Nvidia drivers</li>
-                                        </ul>
-                                    </li>
-                                    <li>Unbridled customization
-                                        <ul>
-                                            <li>Craft your perfect image from scratch or derive from others</li>
                                         </ul>
                                     </li>
                                     <li>Community Maintained
@@ -202,14 +202,16 @@
                                             <li>The project is maintained by a community of cloud-native contributors with an <a href="https://github.com/ublue-os/website/blob/main/docs/mission.md">explicit mission</a></li>
                                         </ul>
                                     </li>
-                                    <li>Images signed with standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a></li>
-                                    <li>Hosted on <a href="https://github.com/features/packages" target="_blank">ghcr.io</a>:
+                                    <li>Unbridled customization
                                         <ul>
-                                            <li>Ninety (90) days of image archives allowing for flexible rollback options</li>
-                                            <li>Globally distributed via CDN for fast image downloads, thanks Microsoft!</li>
+                                            <li>Craft your perfect image from scratch or derive from others</li>
                                         </ul>
                                     </li>
-                                    <li>Rebase back to <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora</a> without reinstallation. This is why we don't call it a distribution, it's an atomic layer of customization on an existing distribution that can be removed.</li>
+                                    <li>Clean separation of the base system from applications and your data</li>
+                                    <li>Images signed with standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a></li>
+                                    <li>Rebase back to <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora</a> without reinstallation.<ul>
+                                        <li>This is why we don't call it a distribution, it's an atomic layer of customization on an existing distribution that can be removed.</li>
+                                    </ul></li>
                                 </ul>
                             </span>
                         </div>
