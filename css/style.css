@@ -2402,10 +2402,6 @@ textarea:-webkit-autofill:focus{
     background-color: #4051b5;
     height: 100vh;
 }
-#sketch-holder {
-    position: absolute;
-    top: 0px;
-}
 #sketch-holder > canvas {
   display: block;
   mix-blend-mode: luminosity;
@@ -10966,6 +10962,10 @@ a.blog-item-more:hover{
 
 #community .alt-features-title {
     white-space: nowrap;
+    z-index: 2;
+    position: relative;
+    text-transform: none;
+    font-size: 12px;
 }
 
 #community .alt-features-icon {

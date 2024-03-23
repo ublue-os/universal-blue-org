@@ -18,7 +18,10 @@ function setup() {
 
   randomSeed(seed);
   noiseSeed(seed);
-  var canvas = createCanvas(windowWidth, windowHeight);
+  let container = document.getElementById('sketch-holder');
+  let width = container.clientWidth;
+  let height = container.clientHeight;
+  var canvas = createCanvas(width, height);
   canvas.parent('sketch-holder');
   canvas.style('display', 'block');
   for(let i = 0; i < num; i ++) {
@@ -49,7 +52,10 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  let container = document.getElementById('sketch-holder');
+  let width = container.clientWidth;
+  let height = container.clientHeight;
+  resizeCanvas(width, height);
 }
 
 function onScreen(v) {
