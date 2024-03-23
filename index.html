@@ -26,6 +26,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <link rel="preconnect" href="https://cdn.jsdelivr.net">
         <link rel="preconnect" href="https://repobeats.axiom.co">
         <link rel="preconnect" href="https:///universal-blue.discourse.group">
 
@@ -587,7 +588,10 @@
                                 </span>
                             </div>
                             <h3 style="text-align:center;width:100%;">Pulls</h3>
-                            <iframe style="width:100%;height:50vw;border:none;max-width:1140px;max-height:582px;left:0;right:0;margin:auto;overflow:hidden;" scrolling="no" src="https://storage.googleapis.com/ghp-stats/ublue-os/index.html"></iframe>
+                            <select id="image-selector">
+                                <option value="all">All</option>
+                            </select>
+                            <canvas id="myChart"></canvas>
                             <div style="text-align:center;" class="work-descr">This charts image pulls of Universal Blue images.<br>Pulls are not indicative of users, just successful image updates.</div>
                         </div>
                         <div class="row mt-50">
@@ -822,10 +826,98 @@
         <!-- JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/all.js"></script>
         <script src="js/sketch.js"></script>
         <script type="text/javascript" src="https:///universal-blue.discourse.group/javascripts/embed-topics.js"></script>
+
+        <script>
+            $(function () {
+                var ctx = document.getElementById("myChart").getContext("2d");
+                // examine example_data.json for expected response data
+                var json_url = "https://storage.googleapis.com/ghp-stats/ublue-os/data.json";
+
+                // draw empty chart
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [],
+                        datasets: [
+                            {
+                                label: "Ublue OS",
+                                fill: false,
+                                lineTension: 0.1,
+                                backgroundColor: "rgba(75,192,192,0.4)",
+                                borderColor: "rgba(75,192,192,1)",
+                                borderCapStyle: 'butt',
+                                borderDash: [],
+                                borderDashOffset: 0.0,
+                                borderJoinStyle: 'miter',
+                                pointBorderColor: "rgba(75,192,192,1)",
+                                pointBackgroundColor: "#fff",
+                                pointBorderWidth: 1,
+                                pointHoverRadius: 5,
+                                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                                pointHoverBorderColor: "rgba(220,220,220,1)",
+                                pointHoverBorderWidth: 2,
+                                pointRadius: 1,
+                                pointHitRadius: 10,
+                                data: [],
+                                spanGaps: false,
+                            }
+                        ]
+                    },
+                });
+
+                ajax_chart(myChart, json_url);
+
+                // function to update our chart
+                function ajax_chart(chart, url, data) {
+                    var data = data || {};
+
+                    $.getJSON(url, data).done(function(response) {
+                        latestDay = Object.keys(response)[Object.keys(response).length -1];
+                        console.log(latestDay);
+                        for (i in response[latestDay]) {
+                            console.log(i);
+                            $('#image-selector').append('<option value="'+i+'">'+i+'</option>');
+                        }
+
+                        $( "#image-selector" )
+                        .on( "change", function() {
+                            var str = "all";
+                            $( "select option:selected" ).each( function() {
+                            str = $( this ).val();
+                            } );
+                            console.log("loading data for "+str);
+                            loadData(chart, response, str);
+                        } );
+
+                        loadData(chart, response, "all");
+                    });
+                }
+                function loadData(chart, data, label){
+                    labels = [];
+                    pulls = [];
+                    for (k in data) {
+                        labels.push(k);
+                        if(label == "all"){
+                            total = 0;
+                            for(i in data[k]){
+                                total += data[k][i];
+                            }
+                            pulls.push(total);
+                        } else {
+                            pulls.push(data[k][label]);
+                        }
+                    }
+                    chart.data.labels = labels;
+                    chart.data.datasets[0].data = pulls;
+                    chart.update(); // finally update our chart
+                }
+            });
+        </script>
         <!-- End JS -->
     </body>
 </html>

@@ -10974,6 +10974,17 @@ a.blog-item-more:hover{
 }
 
 /* Contributions Slider */
+#image-selector {
+    width: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#myChart {
+    width: 100% !important;
+    position: relative;
+}
+
 #metrics .features-item {
     margin: auto;
 }
