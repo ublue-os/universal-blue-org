@@ -628,8 +628,20 @@
 
 @media only screen and (max-width: 767px) {
     
-    #metrics span, #metrics h3, #community span, #community h3, #news, #images h2, #about h3 {
+    #metrics span,
+    #metrics h3,
+    #community span,
+    #community h3,
+    #news,
+    #images h2,
+    #about h3,
+    #advantages .btn-wrapper {
         text-align: center;
+    }
+
+    #advantages .btn-wrapper {
+        width: 100%;
+        display: inline-block;
     }
 
     #community span.text-gray {

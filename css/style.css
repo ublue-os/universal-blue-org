@@ -4291,6 +4291,7 @@ body:not(.simple-page) .main-nav:not(.body-scrolled) a {
 
 body.simple-page .row > ul {
     margin-left: 30px;
+    padding-right: 30px;
 }
 
 .inner-nav.js-opened a {
