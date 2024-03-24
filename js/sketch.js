@@ -31,7 +31,6 @@ function setup() {
   stroke(100);
   clear();
   windowResized();
-  frameRate(30);
 }
 
 function draw() {
