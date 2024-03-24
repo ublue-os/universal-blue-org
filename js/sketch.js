@@ -19,9 +19,9 @@ function setup() {
   randomSeed(seed);
   noiseSeed(seed);
   let container = document.getElementById('sketch-holder');
-  let width = container.clientWidth;
-  let height = container.clientHeight;
-  var canvas = createCanvas(width, height);
+  let desiredWidth = container.clientWidth;
+  let desiredHeight = container.clientHeight;
+  var canvas = createCanvas(desiredWidth, desiredHeight);
   canvas.parent('sketch-holder');
   canvas.style('display', 'block');
   for(let i = 0; i < num; i ++) {
@@ -53,9 +53,11 @@ function draw() {
 
 function windowResized() {
   let container = document.getElementById('sketch-holder');
-  let width = container.clientWidth;
-  let height = container.clientHeight;
-  resizeCanvas(width, height);
+  let desiredWidth = container.clientWidth;
+  let desiredHeight = container.clientHeight;
+  if(width != desiredWidth || height != desiredHeight) {
+    resizeCanvas(desiredWidth, desiredHeight);
+  }
 }
 
 function onScreen(v) {
