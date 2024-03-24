@@ -11069,7 +11069,11 @@ a.blog-item-more:hover{
     }
 
     .features-item img {
-        max-height: 110px !important;
+        max-height: 110px!important;
+    }
+
+    #community .alt-features-title {
+        font-size: 12px!important;
     }
 }
 
