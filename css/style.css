@@ -10869,8 +10869,11 @@ a.blog-item-more:hover{
     box-sizing: content-box;
     font-size: 57px;
     text-align: center;
-    color: var(--color-dark-1);
-    opacity: .8;
+    color: fff;
+    opacity: 1;
+    background: #4051b5cc;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
     z-index: 6;  
     transition: var(--transition-default);
 }
