@@ -173,7 +173,7 @@
                         <div class="row wow fadeInUp" data-wow-delay="0.25s">
                             
                             <span style="font-weight:300;">
-                                The Universal Blue project builds a diverse set of <a href="https://en.wikipedia.org/wiki/Continuous_delivery">continuously delivered</a> operating system images using <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora Atomic Desktop</a>'s support for OCI/Docker containers as a <a href="https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable" target="_blank">transport and delivery mechanism for operating system content</a>. <strong>That's nerdspeak for the ultimate Linux client</strong>: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. At long last, we've ascended.<br><br>We also provide tools for users to build their own image using our templates and processes, which can be used to ship custom configurations to all of your machines, or finally make the Linux distribution you've long wished for, but never had the tools to create.
+                                The Universal Blue project builds a diverse set of <a href="https://en.wikipedia.org/wiki/Continuous_delivery">continuously delivered</a> operating system images using <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora Atomic Desktop</a>'s support for <a href="https://fedoraproject.org/wiki/Changes/OstreeNativeContainerStable" target="_blank">OCI/Docker containers</a>. <strong>That's nerdspeak for the ultimate Linux client</strong>: the reliability of a Chromebook, but with the flexibility and power of a traditional Linux desktop. These images ship community best practices out-of-the-box, on top of a Fedora base. At long last, we've ascended.<br><br>We also provide tools for users to build their own image using our templates and processes, which can be used to ship custom configurations to all of your machines, or finally make the Linux distribution you've long wished for, but never had the tools to create.
                             </span>
                         </div>
                     
@@ -200,7 +200,7 @@
                         <div class="row wow fadeInUp" data-wow-delay="0.25s">
                             
                             <span style="font-weight:300;">
-                                All of Universal Blue rests on the idea of <a href="https://en.wikipedia.org/wiki/Cloud-native_computing" target="_blank">cloud-native</a>. We leverage standard cloud tools like the OCI standard and the GitHub Container Registry to build our images. This is a much lighter and faster way of building and deploying Linux environments to users that allows professionals in the industry to leverage their pre-existing knowledge to create a better desktop Linux experience.<br><br>We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today. This is achieved by reusing cloud technologies as a delivery mechanism to deliver a more reliable experience.
+                                All of Universal Blue rests on the idea of <a href="https://en.wikipedia.org/wiki/Cloud-native_computing" target="_blank">cloud-native</a>. We leverage standard cloud tools like the <a href="https://opencontainers.org/" target="_blank"></a>OCI standard</span>a> and GitHub to build our images. This is a much lighter and faster way of building and deploying Linux environments to users that allows professionals in the industry to leverage their pre-existing knowledge to create a better desktop Linux experience for everyone.<br><br>We feel that a dedicated group of enthusiasts can automate a large amount of toil that plagues existing Linux desktops today. This is achieved by reusing cloud technologies as a delivery mechanism to deliver a more reliable experience.
                             </span>
                         </div>
                     
@@ -229,13 +229,13 @@
                             <span style="font-weight:300;">
                                 <ul>
                                     <li>Reliable, atomic updates with built in rollback<ul>
-                                        <li>Built using ostree-enabled <a href="https://opencontainers.org/" target="_blank">OCI compliant images</a></li>
+                                        <li>Built using OSTree-enabled <a href="https://opencontainers.org/" target="_blank">OCI compliant images</a></li>
                                         <li>Hosted on <a href="https://github.com/features/packages" target="_blank">ghcr.io</a><ul>
                                             <li>Ninety (90) days of image archives allowing for flexible rollback options</li>
                                             <li>Globally distributed via CDN for fast image downloads - Thanks Microsoft!</li>
                                         </ul></li>
                                     </ul></li>
-                                    <li>Known-good state and fewer failures
+                                    <li>Known-good State and Fewer Failures
                                         <ul>
                                             <li>Significantly reduced configuration drift</li>
                                             <li>Kernel mods preinstalled on the image - including Nvidia drivers</li>
@@ -252,9 +252,9 @@
                                         </ul>
                                     </li>
                                     <li>Clean separation of the base system from applications and your data</li>
-                                    <li>Images signed with standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a></li>
+                                    <li>Images signed with industry standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a></li>
                                     <li>Rebase back to <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora</a> without reinstallation.<ul>
-                                        <li>This is why we don't call it a distribution, it's an atomic layer of customization on an existing distribution that can be removed.</li>
+                                        <li>Not a new distribution, it's an atomic layer of customization on Fedora that can be removed.</li>
                                     </ul></li>
                                 </ul>
                             </span>
