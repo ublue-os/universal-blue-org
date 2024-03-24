@@ -10996,9 +10996,12 @@ a.blog-item-more:hover{
     margin: auto;
 }
 
-#metrics .owl-pagination,
-#images .owl-pagination {
+#metrics .owl-pagination {
     bottom: -80px;
+}
+
+#images .owl-pagination {
+    bottom: -40px;
 }
 
 #metrics .owl-prev {
