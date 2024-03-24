@@ -10958,6 +10958,12 @@ a.blog-item-more:hover{
 /* Community */
 #community .alt-features-item {
     text-align: center;
+    width: 100%;
+    padding-left: 0px!important;
+}
+
+#community .alt-features-item > a {
+    width: 100%;
 }
 
 #community .alt-features-title {
