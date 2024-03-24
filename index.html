@@ -232,11 +232,13 @@
                                         <li>Built using OSTree-enabled <a href="https://opencontainers.org/" target="_blank">OCI compliant images</a></li>
                                         <li>Hosted on <a href="https://github.com/features/packages" target="_blank">ghcr.io</a><ul>
                                             <li>Ninety (90) days of image archives allowing for flexible rollback options</li>
-                                            <li>Globally distributed via CDN for fast image downloads - Thanks Microsoft!</li>
+                                            <li>Globally distributed via CDN for fast image downloads</li>
+                                            <li>Images signed with industry standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a>
                                         </ul></li>
                                     </ul></li>
                                     <li>Known-good State and Fewer Failures
                                         <ul>
+                                            <li>Installation designed to last for the life of the hardware with minimal maintenance</li>
                                             <li>Significantly reduced configuration drift</li>
                                             <li>Kernel mods preinstalled on the image - including Nvidia drivers</li>
                                         </ul>
@@ -252,9 +254,8 @@
                                         </ul>
                                     </li>
                                     <li>Clean separation of the base system from applications and your data</li>
-                                    <li>Images signed with industry standard <a href="https://www.sigstore.dev/" target="_blank">sigstore tools</a></li>
-                                    <li>Rebase back to <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora</a> without reinstallation.<ul>
-                                        <li>Not a new distribution, it's an atomic layer of customization on Fedora that can be removed.</li>
+                                    <li>Rebase back to <a href="https://fedoraproject.org/atomic-desktops/" target="_blank">Fedora</a> without reinstallation<ul>
+                                        <li>Not a new distribution, an atomic layer of customization on Fedora that can be removed.
                                     </ul></li>
                                 </ul>
                             </span>
