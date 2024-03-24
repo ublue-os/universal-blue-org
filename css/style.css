@@ -10971,7 +10971,7 @@ a.blog-item-more:hover{
     z-index: 2;
     position: relative;
     text-transform: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #community .alt-features-icon {
@@ -11047,10 +11047,6 @@ a.blog-item-more:hover{
     .home-content .align-items-center {
         display: block !important;
         text-align: center;
-    }
-
-    #community .alt-features-title {
-        font-size: 12px!important;
     }
 }
 
