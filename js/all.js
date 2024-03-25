@@ -406,10 +406,8 @@
             });
             
             if($("#home").filter(":in-viewport:first").length == 0) {
-                $('footer .local-scroll').addClass('scroll-visible');
                 $('.nav-logo-wrap .logo').addClass('scroll-visible');
             } else {
-                $('footer .local-scroll').removeClass('scroll-visible');
                 $('.nav-logo-wrap .logo').removeClass('scroll-visible');
             }
 
