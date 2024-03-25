@@ -10985,6 +10985,8 @@ a.blog-item-more:hover{
     width: auto;
     margin: auto;
     margin-bottom: 10px;
+    background: none;
+    border: none;
 }
 
 #myChart {
