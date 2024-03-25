@@ -979,9 +979,9 @@
 
                     $.getJSON(url, data).done(function(response) {
                         latestDay = Object.keys(response)[Object.keys(response).length -1];
-                        console.log(latestDay);
+                        //console.log(latestDay);
                         for (i in response[latestDay]) {
-                            console.log(i);
+                            //console.log(i);
                             $('#image-selector').append('<option value="'+i+'">'+i+'</option>');
                         }
 
@@ -991,7 +991,7 @@
                             $( "select option:selected" ).each( function() {
                             str = $( this ).val();
                             } );
-                            console.log("loading data for "+str);
+                            //console.log("loading data for "+str);
                             loadData(chart, response, str);
                         } );
 
