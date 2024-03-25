@@ -10919,13 +10919,15 @@ a.blog-item-more:hover{
     text-align: center;
     line-height: 1;
 }
-.owl-page{
+.owl-dots{
     display: inline-block;
     padding: 7px;
     position: relative;
     z-index: 1000 !important;
+    width: 100%;
+    text-align: center;
 }
-.owl-page span{
+.owl-dot span{
     width: 15px;
     height: 15px;
     display: block;
@@ -10934,8 +10936,9 @@ a.blog-item-more:hover{
     position: relative;    
     border-radius: 50%;   
     transition: var(--transition-default);
+    margin: 5px;
 }
-.owl-page.active span {
+.owl-dot.active span {
     background: linear-gradient(180deg,rgb(89,202,253) 0%,rgb(43,80,239) 100%);
     border: none;
 }
@@ -11119,6 +11122,18 @@ a.blog-item-more:hover{
 }
 .work-full-slider img{
     width: 100%;
+}
+
+.owl-prev, .owl-next {
+    background-color: #4051b5 !important;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+.owl-prev span, .owl-next span {
+    font-size: 70px;
+    top: -33px;
+    position: relative;
 }
 
 /* Team carousel */
