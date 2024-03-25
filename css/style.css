@@ -802,6 +802,30 @@ footer .local-scroll.scroll-visible {
     opacity: 1;
     pointer-events: all;
 }
+.ublue-testimonials .blockquote {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+.ublue-testimonials i {
+    float: left;
+    top: 10px;
+    position: relative;
+    font-size: 32px;
+}
+
+.ublue-testimonials blockquote {
+    margin-left: 45px;
+    text-align: left;
+}
+
+.ublue-testimonials .author {
+    text-align: right;
+    color: #777;
+}
+
 .testimonial{
     position: relative;
     margin: 0 0 1.5em 0;
