@@ -11128,6 +11128,7 @@ a.blog-item-more:hover{
     background-color: #4051b5 !important;
     color: #fff !important;
     border-radius: 5px;
+    height: 60px!important;
 }
 
 .owl-prev span, .owl-next span {
