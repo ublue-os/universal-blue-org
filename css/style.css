@@ -11014,7 +11014,7 @@ a.blog-item-more:hover{
 }
 
 #images .owl-prev {
-    left: -20px;
+    left: -10px;
 }
 
 #metrics .owl-next {
@@ -11022,7 +11022,7 @@ a.blog-item-more:hover{
 }
 
 #images .owl-next {
-    right: -20px;
+    right: -10px;
 }
 
 .main-logo {
