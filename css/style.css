@@ -10929,15 +10929,15 @@ a.blog-item-more:hover{
     width: 15px;
     height: 15px;
     display: block;
-    background: none;
-    border: 1px solid var(--color-dark-1);
+    background: rgba(0,0,0,.15);
+    border: none;
     position: relative;    
     border-radius: 50%;   
     transition: var(--transition-default);
 }
-.owl-page.active span{    
-    background: #4051b5;
-    border: 1px solid var(--color-dark-1);
+.owl-page.active span {
+    background: linear-gradient(180deg,rgb(89,202,253) 0%,rgb(43,80,239) 100%);
+    border: none;
 }
 .light-content .owl-page span{
     border: 1px solid #fff;
