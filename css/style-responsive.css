@@ -646,6 +646,8 @@
     #news,
     #images h2,
     #about h3,
+    #advantages h3,
+    #cloud-native h3,
     #advantages .btn-wrapper {
         text-align: center;
     }
