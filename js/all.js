@@ -20,7 +20,6 @@
         init_btn_animation();          
         init_classic_menu();
         init_scroll_navigate();        
-        init_lightbox();
         init_team();
         init_services_2();
         init_map();
@@ -433,91 +432,6 @@
             effectspeed: 1000,
             skip_invisible : false,
             threshold : 200
-        });
-        
-    }
-    
-    
-    /* ---------------------------------------------
-     Lightboxes
-     --------------------------------------------- */
-    
-    function init_lightbox(){
-    
-        // Works Item Lightbox				
-        $(".work-lightbox-link").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        	
-        // Other Custom Lightbox
-        $(".lightbox-gallery-1").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-2").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-3").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-4").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-5").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-6").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-7").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-8").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-9").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox-gallery-10").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
-        });
-        $(".lightbox").magnificPopup({
-            gallery: {
-                enabled: true
-            },
-            mainClass: "mfp-fade"
         });
         
     }
