@@ -982,7 +982,35 @@ function init_page_sliders(){
             });            
         }
         
-       
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        function randomizeImages() {
+            const container = document.getElementById('images-slider');
+            const items = Array.from(container.children);
+            const features = items.filter(item => item.classList.contains('features-item'));
+            const noRandom = items.filter(item => item.classList.contains('no-random'));
+
+            const randomizedFeatures = shuffle(features);
+
+            container.innerHTML = '';
+
+            randomizedFeatures.forEach(feature => {
+                container.appendChild(feature);
+            });
+
+            noRandom.forEach(item => {
+                container.appendChild(item);
+            });
+        }
+
+        randomizeImages();
+
         // Fullwidth slider
         $(".fullwidth-slider").owlCarousel({
             slideSpeed: 350,
