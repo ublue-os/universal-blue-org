@@ -905,22 +905,24 @@ function init_page_sliders(){
         }
 
         function randomizeImages() {
-            const container = document.getElementById('images-slider');
-            const items = Array.from(container.children);
-            const features = items.filter(item => item.classList.contains('features-item'));
-            const noRandom = items.filter(item => item.classList.contains('no-random'));
+            var container = document.getElementById('images-slider');
+            if( container ) {
+                var items = Array.from(container.children);
+                var features = items.filter(item => item.classList.contains('features-item'));
+                var noRandom = items.filter(item => item.classList.contains('no-random'));
 
-            const randomizedFeatures = shuffle(features);
+                var randomizedFeatures = shuffle(features);
 
-            container.innerHTML = '';
+                container.innerHTML = '';
 
-            randomizedFeatures.forEach(feature => {
-                container.appendChild(feature);
-            });
+                randomizedFeatures.forEach(feature => {
+                    container.appendChild(feature);
+                });
 
-            noRandom.forEach(item => {
-                container.appendChild(item);
-            });
+                noRandom.forEach(item => {
+                    container.appendChild(item);
+                });
+            }
         }
 
         randomizeImages();
