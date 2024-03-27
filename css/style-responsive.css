@@ -652,6 +652,10 @@
         text-align: center;
     }
 
+    #cloud-native iframe {
+        width: 100% !important;
+    }
+
     #advantages .btn-wrapper {
         width: 100%;
         display: inline-block;
