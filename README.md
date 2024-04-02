@@ -18,4 +18,6 @@ The website with batteries included!
 * Header flow field effect based on code by [Barney Codes](https://www.barneycodes.com/).
 * Built from the [Resonance](https://themeforest.net/item/resonance-html-onemulti-page-multipurpose-template/48140535) template.
 
-![Pagespeed](/metrics.plugin.pagespeed.svg)
+<p align="center">
+  <img src="/metrics.plugin.pagespeed.svg?raw=true" alt="Google Pagespeed Metrics"/>
+</p>
