@@ -14,6 +14,6 @@ jobs:
           token: NOT_NEEDED
           base: ""
           plugin_pagespeed: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}}
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_detailed: yes
           plugin_pagespeed_url: https://universal-blue.org/
