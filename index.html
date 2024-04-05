@@ -707,7 +707,8 @@
                             </div>
                             <h3 style="text-align:center;width:100%;">Pulls</h3>
                             <select id="image-selector">
-                                <option value="all">All</option>
+                                <option value="total">Total</option>
+                                <option value="end-user">End-user images</option>
                             </select>
                             <canvas id="myChart"></canvas>
                             <div style="text-align:center;" class="work-descr">This charts image pulls of Universal Blue images.<br>Pulls are not indicative of users, just successful image updates.</div>
@@ -929,76 +930,101 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
         <script>
-            $(function () {
-                var ctx = document.getElementById("myChart").getContext("2d");
-                // examine example_data.json for expected response data
-                var json_url = "https://storage.googleapis.com/ghp-stats/ublue-os/data.json";
+            var ctx = document.getElementById("myChart").getContext("2d");
+            // examine example_data.json for expected response data
+            var json_url = "https://storage.googleapis.com/ghp-stats/ublue-os/data.json";
 
-                // draw empty chart
-                var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: [],
-                        datasets: [
-                            {
-                                label: "Ublue OS",
-                                fill: false,
-                                lineTension: 0.1,
-                                backgroundColor: "rgba(75,192,192,0.4)",
-                                borderColor: "rgba(75,192,192,1)",
-                                borderCapStyle: 'butt',
-                                borderDash: [],
-                                borderDashOffset: 0.0,
-                                borderJoinStyle: 'miter',
-                                pointBorderColor: "rgba(75,192,192,1)",
-                                pointBackgroundColor: "#fff",
-                                pointBorderWidth: 1,
-                                pointHoverRadius: 5,
-                                pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                                pointHoverBorderColor: "rgba(220,220,220,1)",
-                                pointHoverBorderWidth: 2,
-                                pointRadius: 1,
-                                pointHitRadius: 10,
-                                data: [],
-                                spanGaps: false,
-                            }
-                        ]
-                    },
-                });
+            const defaultDataset = {
+                label: "Ublue OS",
+                fill: false,
+                lineTension: 0.1,
+                backgroundColor: "rgba(75,192,192,0.4)",
+                borderColor: "rgba(75,192,192,1)",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter',
+                pointBorderColor: "rgba(75,192,192,1)",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 1,
+                pointHoverRadius: 5,
+                pointHoverBackgroundColor: "rgba(75,192,192,1)",
+                pointHoverBorderColor: "rgba(220,220,220,1)",
+                pointHoverBorderWidth: 2,
+                pointRadius: 1,
+                pointHitRadius: 10,
+                data: [],
+                spanGaps: false,
+            };
 
-                ajax_chart(myChart, json_url);
+            // draw empty chart
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [
+                        defaultDataset
+                    ]
+                },
+            });
 
-                // function to update our chart
-                function ajax_chart(chart, url, data) {
-                    var data = data || {};
+            ajax_chart(myChart, json_url);
 
-                    $.getJSON(url, data).done(function(response) {
-                        latestDay = Object.keys(response)[Object.keys(response).length -1];
-                        //console.log(latestDay);
-                        for (i in response[latestDay]) {
-                            //console.log(i);
-                            $('#image-selector').append('<option value="'+i+'">'+i+'</option>');
-                        }
+            // function to update our chart
+            async function ajax_chart(chart, url) {
+                const res = await fetch(url);
+                const data = await res.json();
+                
+                const latestDay = Object.keys(data)[Object.keys(data).length-1];
 
-                        $( "#image-selector" )
-                        .on( "change", function() {
-                            var str = "all";
-                            $( "select option:selected" ).each( function() {
-                            str = $( this ).val();
-                            } );
-                            //console.log("loading data for "+str);
-                            loadData(chart, response, str);
-                        } );
+                const imageSelector = document.querySelector('#image-selector');
 
-                        loadData(chart, response, "all");
-                    });
+                //console.log(latestDay);
+                for (i in data[latestDay]) {
+                    //console.log(i);
+                    imageSelector.innerHTML += `<option value="${i}">${i}</option>`;
                 }
-                function loadData(chart, data, label){
-                    labels = [];
-                    pulls = [];
+
+                imageSelector.addEventListener("change", () => {
+                    loadData(chart, data, imageSelector.value);
+                });
+                
+                // initial value
+                loadData(chart, data, "total");
+            }
+            function loadData(chart, data, label){
+                const endUserImages = ["bazzite", "bluefin"]
+
+                labels = [];
+                pulls = [];
+                if (label == "end-user") {
+                    chart.data.datasets = []
                     for (k in data) {
                         labels.push(k);
-                        if(label == "all"){
+                    }
+                    for (let img of endUserImages) {
+                        let finalData = []
+                        for (k in data) {
+                            const filteredData = Object.fromEntries(Object.entries(data[k]).filter(it => 
+                                it[0].includes(img)
+                            ));
+                            let total = 0;
+                            for(i in filteredData){
+                                total += filteredData[i];
+                            }
+                            finalData.push(total)
+                        }
+                        chart.data.datasets.push({
+                            ...defaultDataset,
+                            label: img,
+                            data: finalData
+                        })
+                    }
+                } else {
+                    chart.data.datasets = [defaultDataset]
+                    for (k in data) {
+                        labels.push(k);
+                        if (label == "total"){
                             total = 0;
                             for(i in data[k]){
                                 total += data[k][i];
@@ -1008,11 +1034,11 @@
                             pulls.push(data[k][label]);
                         }
                     }
-                    chart.data.labels = labels;
                     chart.data.datasets[0].data = pulls;
-                    chart.update(); // finally update our chart
                 }
-            });
+                chart.data.labels = labels;
+                chart.update(); // finally update our chart
+            }
         </script>
         <!-- End JS -->
     </body>
