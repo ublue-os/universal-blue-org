@@ -3,21 +3,57 @@ const num = 500;
 
 const noiseScale = 0.01/9;
 
-function getRandomImage() {
-  const image = ["bazzite", "bluefin", "ucore", "aurora", "ublue"];
-  const randomIndex = Math.floor(Math.random() * image.length);
-  return image[randomIndex];
+async function fetchJSONAsync(url) {
+  try {
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.status}`);
+    }
+
+    const jsonData = await response.json();
+
+    return jsonData;
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
+}
+
+function applyImageBasedNoise() {
+  const url = 'https://universal-blue.org/image_list.json';
+
+  fetchJSONAsync(url)
+    .then(jsonData => {
+      if (jsonData && jsonData.length > 0) {
+        const nonPrivateElements = jsonData.filter(element => !element.private);
+        const randomIndex = Math.floor(Math.random() * nonPrivateElements.length);
+        const randomImage = Math.floor(Math.random() * nonPrivateElements[randomIndex].length)
+        const randomName = nonPrivateElements[randomIndex][randomImage].name;
+
+        let seed = 0;
+        for (let i = 0; i < randomName.length; i++) {
+            seed += randomName.charCodeAt(i);
+        }
+
+        randomSeed(seed);
+        noiseSeed(seed);
+
+        const imageNameElement = document.getElementById('image-name');
+        const imageURLElement = document.getElementById('image-url');
+        imageURLElement.textContent = randomName;
+        imageURLElement.href = nonPrivateElements[randomIndex][randomImage].repository.html_url;
+        imageNameElement.style.display = '';
+      } else {
+        console.log("Failed to fetch JSON data or JSON data is empty.");
+      }
+    })
+    .catch(error => console.error("Error fetching JSON data:", error));
 }
 
 function setup() {
-  let str = getRandomImage();
-  let seed = 0;
-  for (let i = 0; i < str.length; i++) {
-      seed += str.charCodeAt(i);
-  }
+  applyImageBasedNoise();
 
-  randomSeed(seed);
-  noiseSeed(seed);
   let container = document.getElementById('sketch-holder');
   let desiredWidth = container.clientWidth;
   let desiredHeight = container.clientHeight;
