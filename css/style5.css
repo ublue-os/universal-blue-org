@@ -3597,8 +3597,6 @@ body:not(.simple-page) .nav-logo-wrap .logo.scroll-visible {
 }
 
 .main-nav .logo img {
-    height: 40px;
-    width: 40px;
     margin-top: -3px;
 }
 .nav-logo-wrap .logo > h2 {
@@ -11083,10 +11081,7 @@ a.blog-item-more:hover{
     }
 
     .main-logo {
-        left: inherit;
-        top: inherit;
-        margin: auto;
-        margin-bottom: 30px;
+        max-width:100%!important;
     }
 
     .home-content .align-items-center {
