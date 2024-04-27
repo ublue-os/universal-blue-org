@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://universal-blue.org/"><img src="/content/preview-2.png?raw=true" alt="Universal Blue"/></a>
+  <a href="https://universal-blue.org/"><img src="/content/preview2.png?raw=true" alt="Universal Blue"/></a>
 </p>
 
 # Universal Blue Website
