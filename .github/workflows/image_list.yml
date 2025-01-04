@@ -16,7 +16,7 @@ jobs:
           jq -s . /tmp/image_list*.json > image_list.json
 
       - name: Write image_list.json to Repostiory
-        uses: test-room-7/action-update-file@v1
+        uses: test-room-7/action-update-file@v2
         with:
             file-path: image_list.json
             commit-msg: Image List Update
