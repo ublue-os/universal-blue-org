@@ -1,0 +1,21 @@
+name: GHP Stats
+on:
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
+jobs:
+  update-ghp-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download File
+        run: |
+          curl https://storage.googleapis.com/ghp-stats/ublue-os/data.json --output ./ghp-stats.json
+        working-directory: ${{ github.workspace }}
+
+      - name: Write image_list.json to Repostiory
+        uses: test-room-7/action-update-file@v2
+        with:
+            file-path: ghp-stats.json
+            commit-msg: GHP Stats Update
+            github-token: ${{ secrets.GITHUB_TOKEN }}
