@@ -10,7 +10,12 @@ jobs:
     steps:
       - name: Download File
         run: |
-          curl https://storage.googleapis.com/ghp-stats/ublue-os/data.json --output ./ghp-stats.json
+          curl https://storage.googleapis.com/ghp-stats/ublue-os/data.json --output ./ghp-stats-full.json
+        working-directory: ${{ github.workspace }}
+
+      - name: Truncate and Clean File
+        run: |
+          jq 'to_entries | map(select(.value != {})) | .[-90:] | from_entries' ghp-stats-full.json > ghp-stats.json 
         working-directory: ${{ github.workspace }}
 
       - name: Write image_list.json to Repostiory
