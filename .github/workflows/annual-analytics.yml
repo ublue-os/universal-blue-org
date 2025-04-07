@@ -1,6 +1,6 @@
 name: Update Annual Report
 on:
-  schedule: [{cron: "0 1 * * *"}]
+  schedule: [{cron: "0 1 1 * *"}]
   workflow_dispatch:
 jobs:
   annual-report-update:
