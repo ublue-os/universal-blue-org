@@ -14,6 +14,7 @@ jobs:
           wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -P analytics/annual/ -nH --cut-dirs=3 -U mozilla https://savannahcrm.com/public/report/1b15d288-a47e-41d7-8d2e-67ddc2c2ac21
           mv analytics/annual/*.html analytics/annual/index.html
           sed -i '/<head>/a <link rel="stylesheet" href="https://universal-blue.org/analytics/override.css">\n<script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5.4.3" type="text/javascript" async></script>' analytics/annual/index.html
+          sed -i 's|target="_blank" href="index.html"|target="_blank" href="https://www.savannahhq.com/"|g' analytics/annual/index.html
         working-directory: ${{ github.workspace }}
 
       - name: Write Annual Report to Repostiory
