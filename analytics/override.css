@@ -2,6 +2,18 @@ body {
   background: none transparent !important;
 }
 
+.container-fluid {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.container-fluid > .justify-content-center > .col-xl-12 > .card.shadow {
+  padding: 0px !important;
+  margin: 0px !important;
+  box-shadow: none !important;
+  border: 0px !important;
+}
+
 .container-fluid:first-of-type > .row > .col-xl-3:nth-of-type(4),
 .container-fluid:first-of-type > .row > .col-xl-3:nth-of-type(6),
 .container-fluid:first-of-type > .row > .col-xl-3:nth-of-type(7),
