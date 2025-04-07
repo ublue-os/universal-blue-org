@@ -1,3 +1,9 @@
 body {
   background: none transparent !important;
 }
+
+.container-fluid:first-of-type > .row > .col-xl-3:nth-of-type(7),
+.container-fluid:first-of-type > .row > .col-xl-3:nth-of-type(8) {
+    display: none !important;
+    visibility: hidden!important;
+}
