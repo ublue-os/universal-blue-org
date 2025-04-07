@@ -1,0 +1,24 @@
+name: Update Annual Report
+on:
+  schedule: [{cron: "0 1 * * *"}]
+  workflow_dispatch:
+jobs:
+  annual-report-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download Page
+        run: |
+          rm -rf annual/*
+          wget --limit-rate=200k --no-clobber --convert-links --random-wait -r -p -E -e robots=off -P analytics/annual/ -nH --cut-dirs=3 -U mozilla https://savannahcrm.com/public/report/1b15d288-a47e-41d7-8d2e-67ddc2c2ac21
+          mv analytics/annual/*.html analytics/annual/index.html
+          sed -i '/<head>/a <link rel="stylesheet" href="https://analytics.universal-blue.org/override.css">\n<script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/child@5.4.3" type="text/javascript" async></script>' analytics/annual/index.html
+        working-directory: ${{ github.workspace }}
+
+      - name: Write Annual Report to Repostiory
+        uses: test-room-7/action-update-file@v2
+        with:
+            file-path: analytics/annual/index.html
+            commit-msg: Annual-Report Update
+            github-token: ${{ secrets.GITHUB_TOKEN }}
