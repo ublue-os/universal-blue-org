@@ -31,3 +31,9 @@ body {
     display:none!important;
     visibility:hidden!important;
 }
+
+.container-fluid > div.row:nth-child(4) > .col-lg-4 {
+  width:100%!important;
+  max-width:100%!important;
+  flex:0 0 100%!important;
+}
