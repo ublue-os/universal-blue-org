@@ -18,7 +18,7 @@ jobs:
         working-directory: ${{ github.workspace }}
 
       - name: Write Annual Report to Repostiory
-        uses: test-room-7/action-update-file@v2
+        uses: test-room-7/action-update-file@be6fb6d9c59d5ec4b56542f2e8ad2516a99e3402 # v2
         with:
             file-path: analytics/annual/index.html
             commit-msg: Annual-Report Update
