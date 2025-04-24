@@ -1,7 +1,19 @@
 let particles = [];
 const num = 500;
+const noiseScale = 0.01 / 9;
 
-const noiseScale = 0.01/9;
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let reduceMotion = prefersReducedMotion.matches;
+
+// React to user changing their system preferences
+prefersReducedMotion.addEventListener('change', (event) => {
+  reduceMotion = event.matches;
+  if (reduceMotion) {
+    noLoop();
+  } else {
+    loop();
+  }
+});
 
 async function fetchJSONAsync(url) {
   try {
@@ -12,7 +24,6 @@ async function fetchJSONAsync(url) {
     }
 
     const jsonData = await response.json();
-
     return jsonData;
   } catch (error) {
     console.error(error);
@@ -28,12 +39,12 @@ function applyImageBasedNoise() {
       if (jsonData && jsonData.length > 0) {
         const nonPrivateElements = jsonData.filter(element => !element.private);
         const randomIndex = Math.floor(Math.random() * nonPrivateElements.length);
-        const randomImage = Math.floor(Math.random() * nonPrivateElements[randomIndex].length)
+        const randomImage = Math.floor(Math.random() * nonPrivateElements[randomIndex].length);
         const randomName = nonPrivateElements[randomIndex][randomImage].name;
 
         let seed = 0;
         for (let i = 0; i < randomName.length; i++) {
-            seed += randomName.charCodeAt(i);
+          seed += randomName.charCodeAt(i);
         }
 
         randomSeed(seed);
@@ -52,34 +63,40 @@ function applyImageBasedNoise() {
 }
 
 function setup() {
-  applyImageBasedNoise();
-
-  let container = document.getElementById('sketch-holder');
-  let desiredWidth = container.clientWidth;
-  let desiredHeight = container.clientHeight;
-  var canvas = createCanvas(desiredWidth, desiredHeight);
-  canvas.parent('sketch-holder');
-  canvas.style('display', 'block');
-  for(let i = 0; i < num; i ++) {
-    particles.push(createVector(random(width), random(height)));
+  if (reduceMotion) {
+    noLoop(); // Turn off animation
   }
-  
-  stroke(100);
-  clear();
-  windowResized();
+  else {
+    applyImageBasedNoise();
+
+    let container = document.getElementById('sketch-holder');
+    let desiredWidth = container.clientWidth;
+    let desiredHeight = container.clientHeight;
+    const canvas = createCanvas(desiredWidth, desiredHeight);
+    canvas.parent('sketch-holder');
+    canvas.style('display', 'block');
+
+    for (let i = 0; i < num; i++) {
+      particles.push(createVector(random(width), random(height)));
+    }
+
+    stroke(100);
+    clear();
+    windowResized();
+  }
 }
 
 function draw() {
   if (window.scrollY <= window.innerHeight) {
     background(0, 10);
-    for(let i = 0; i < num; i ++) {
+    for (let i = 0; i < num; i++) {
       let p = particles[i];
       point(p.x, p.y);
       let n = noise(p.x * noiseScale, p.y * noiseScale, frameCount * noiseScale * noiseScale);
       let a = TAU * n;
       p.x += cos(a);
       p.y += sin(a);
-      if(!onScreen(p)) {
+      if (!onScreen(p)) {
         p.x = random(width);
         p.y = random(height);
       }
@@ -91,7 +108,7 @@ function windowResized() {
   let container = document.getElementById('sketch-holder');
   let desiredWidth = container.clientWidth;
   let desiredHeight = container.clientHeight;
-  if(width != desiredWidth || height != desiredHeight) {
+  if (width !== desiredWidth || height !== desiredHeight) {
     resizeCanvas(desiredWidth, desiredHeight);
   }
 }
