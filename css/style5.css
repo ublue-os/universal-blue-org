@@ -1017,7 +1017,11 @@ hr.thick{
     fill: currentColor;
 }
 @media only screen and (min-width: 992px) {
-    .hs-title-overlap{ 
+    .blog-media .video {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .hs-title-overlap { 
         width: 137% !important; 
         margin-right: -37%;
     }
@@ -10247,7 +10251,25 @@ d-topics-list > iframe {
     margin-bottom: 30px;
 }
 .blog-media img,
-.blog-media .video,
+.blog-media .video{
+  /* Styles here apply only to .video inside .blog-media */
+  position: relative;
+  width: 75%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-media .video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
 .blog-media iframe{
     width: 100%;
 }
@@ -11091,6 +11113,10 @@ a.blog-item-more:hover{
 }
 
 @media only screen and (max-width: 575px) {
+    .blog-media .video {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     #home .home-content {
         margin-top: -35px;
     }
