@@ -3103,6 +3103,14 @@ a.bg-video-button-pause{
  * Splitting JS chars animation
  */
 
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 .appear-animate .charsAnimIn .char{
     opacity: 0;
     transform: translateY(.5em) rotate(7deg);
@@ -5433,11 +5441,6 @@ body.simple-page .row > ul {
 .marquee-animation{   
     animation: marquee-animation 37s linear infinite;
 }
-@media (prefers-reduced-motion: reduce) {
-    .marquee-animation {
-        animation: none !important;
-    }
-}
 @keyframes marquee-animation {
   0%{
       transform: translate3d(0,0,0);
@@ -5449,11 +5452,6 @@ body.simple-page .row > ul {
 .marquee-animation-1{   
     animation: marquee-animation-1 80s linear infinite;
     will-change: transform;
-}
-@media (prefers-reduced-motion: reduce) {
-    .marquee-animation-1 {
-        animation: none !important;
-    }
 }
 @keyframes marquee-animation-1 {
   0%{
@@ -5467,11 +5465,6 @@ body.simple-page .row > ul {
     animation: marquee-animation-1a 50s linear infinite;
     will-change: transform;
 }
-@media (prefers-reduced-motion: reduce) {
-    .marquee-animation-1a {
-        animation: none !important;
-    }
-}
 @keyframes marquee-animation-1a {
   0%{
       transform: translate3d(0,0,0);
@@ -5483,11 +5476,6 @@ body.simple-page .row > ul {
 .marquee-animation-2{
     animation: marquee-animation-2 80s linear infinite;
     will-change: transform;
-}
-@media (prefers-reduced-motion: reduce) {
-    .marquee-animation-2 {
-        animation: none !important;
-    }
 }
 @keyframes marquee-animation-2 {
   0%{
@@ -5501,11 +5489,6 @@ body.simple-page .row > ul {
     animation: marquee-animation-2a 50s linear infinite;
     will-change: transform;
 }
-@media (prefers-reduced-motion: reduce) {
-    .marquee-animation-2a {
-        animation: none !important;
-    }
-}
 @keyframes marquee-animation-2a {
   0%{
       transform: translate3d(0,0,0);
@@ -5517,11 +5500,6 @@ body.simple-page .row > ul {
 .marquee-animation-3{
     animation: marquee-animation-3 36s linear infinite;
     will-change: transform;
-}
-@media (prefers-reduced-motion: reduce) {
-    .marquee-animation-3 {
-        animation: none !important;
-    }
 }
 @keyframes marquee-animation-3 {
   0%{
