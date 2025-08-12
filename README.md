@@ -21,3 +21,5 @@ The website with batteries included!
 <p align="center">
   <img src="/metrics.plugin.pagespeed.svg?raw=true" alt="Google Pagespeed Metrics"/>
 </p>
+
+![pic](https://next.ossinsight.io/widgets/official/compose-org-activity-active-ranking/thumbnail.png?activity=participants&owner_id=120078124&period=past_28_days&image_size=4x3)
