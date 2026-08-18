@@ -127,7 +127,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/boxkit",
       "created_at": "2023-01-12T14:59:33Z",
-      "updated_at": "2026-08-11T00:10:44Z",
+      "updated_at": "2026-08-18T00:06:41Z",
       "repository": {
         "id": 588021292,
         "node_id": "R_kgDOIwx-LA",
@@ -523,7 +523,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/silverblue-nvidia",
       "created_at": "2023-02-08T17:56:39Z",
-      "updated_at": "2026-08-16T04:53:33Z",
+      "updated_at": "2026-08-17T04:54:23Z",
       "repository": {
         "id": 590647438,
         "node_id": "R_kgDOIzSQjg",
@@ -622,7 +622,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/kinoite-nvidia",
       "created_at": "2023-02-08T18:01:38Z",
-      "updated_at": "2026-08-16T05:16:51Z",
+      "updated_at": "2026-08-17T04:54:26Z",
       "repository": {
         "id": 590647438,
         "node_id": "R_kgDOIzSQjg",
@@ -820,7 +820,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite",
       "created_at": "2023-02-09T19:28:01Z",
-      "updated_at": "2026-08-16T16:25:36Z",
+      "updated_at": "2026-08-17T19:03:21Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -919,7 +919,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/base-nvidia",
       "created_at": "2023-02-14T15:59:04Z",
-      "updated_at": "2026-08-16T01:39:55Z",
+      "updated_at": "2026-08-17T01:39:17Z",
       "repository": {
         "id": 590647438,
         "node_id": "R_kgDOIzSQjg",
@@ -1216,7 +1216,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/base-main",
       "created_at": "2023-03-02T17:55:51Z",
-      "updated_at": "2026-08-16T01:36:26Z",
+      "updated_at": "2026-08-17T01:37:22Z",
       "repository": {
         "id": 608408199,
         "node_id": "R_kgDOJEOShw",
@@ -1315,7 +1315,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/silverblue-main",
       "created_at": "2023-03-02T17:56:02Z",
-      "updated_at": "2026-08-16T04:51:38Z",
+      "updated_at": "2026-08-17T04:52:09Z",
       "repository": {
         "id": 608408199,
         "node_id": "R_kgDOJEOShw",
@@ -1513,7 +1513,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/kinoite-main",
       "created_at": "2023-03-02T17:56:59Z",
-      "updated_at": "2026-08-16T05:14:25Z",
+      "updated_at": "2026-08-17T04:52:40Z",
       "repository": {
         "id": 608408199,
         "node_id": "R_kgDOJEOShw",
@@ -2602,7 +2602,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/akmods",
       "created_at": "2023-05-29T16:44:56Z",
-      "updated_at": "2026-08-16T15:16:58Z",
+      "updated_at": "2026-08-17T23:54:50Z",
       "repository": {
         "id": 612050895,
         "node_id": "R_kgDOJHsnzw",
@@ -3128,7 +3128,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-nvidia",
       "created_at": "2023-06-19T00:56:52Z",
-      "updated_at": "2026-08-13T23:45:40Z",
+      "updated_at": "2026-08-17T20:30:09Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -3227,7 +3227,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-deck",
       "created_at": "2023-06-19T00:58:10Z",
-      "updated_at": "2026-08-16T16:31:35Z",
+      "updated_at": "2026-08-17T19:07:36Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -3326,7 +3326,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-deck-nvidia",
       "created_at": "2023-06-19T00:58:55Z",
-      "updated_at": "2026-08-16T16:35:23Z",
+      "updated_at": "2026-08-17T19:15:15Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -3982,7 +3982,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-gnome-nvidia",
       "created_at": "2023-08-03T07:16:11Z",
-      "updated_at": "2026-08-13T20:08:14Z",
+      "updated_at": "2026-08-17T19:01:19Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -4081,7 +4081,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-gnome",
       "created_at": "2023-08-03T07:17:03Z",
-      "updated_at": "2026-08-16T16:42:05Z",
+      "updated_at": "2026-08-17T18:57:40Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -4180,7 +4180,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-deck-gnome",
       "created_at": "2023-08-03T07:18:54Z",
-      "updated_at": "2026-08-16T16:24:04Z",
+      "updated_at": "2026-08-17T19:20:14Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -13123,7 +13123,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/aurora",
       "created_at": "2024-04-07T14:58:31Z",
-      "updated_at": "2026-08-16T04:09:57Z",
+      "updated_at": "2026-08-17T06:55:38Z",
       "repository": {
         "id": 900371327,
         "node_id": "R_kgDONaqTfw",
@@ -13222,7 +13222,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/aurora-dx",
       "created_at": "2024-04-07T15:03:23Z",
-      "updated_at": "2026-08-16T04:17:19Z",
+      "updated_at": "2026-08-17T07:01:31Z",
       "repository": {
         "id": 900371327,
         "node_id": "R_kgDONaqTfw",
@@ -13519,7 +13519,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/akmods-extra",
       "created_at": "2024-04-27T06:23:06Z",
-      "updated_at": "2026-08-16T15:22:12Z",
+      "updated_at": "2026-08-17T23:58:08Z",
       "repository": {
         "id": 612050895,
         "node_id": "R_kgDOJHsnzw",
@@ -15202,7 +15202,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/akmods-zfs",
       "created_at": "2024-07-16T19:49:47Z",
-      "updated_at": "2026-08-16T01:04:36Z",
+      "updated_at": "2026-08-17T01:06:39Z",
       "repository": {
         "id": 612050895,
         "node_id": "R_kgDOJHsnzw",
@@ -15301,7 +15301,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/akmods-nvidia-open",
       "created_at": "2024-08-07T23:27:50Z",
-      "updated_at": "2026-08-16T15:21:45Z",
+      "updated_at": "2026-08-17T23:59:15Z",
       "repository": {
         "id": 612050895,
         "node_id": "R_kgDOJHsnzw",
@@ -15697,7 +15697,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-gnome-nvidia-open",
       "created_at": "2024-09-05T03:44:05Z",
-      "updated_at": "2026-08-16T16:22:59Z",
+      "updated_at": "2026-08-17T20:44:08Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -15796,7 +15796,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-nvidia-open",
       "created_at": "2024-09-05T03:48:10Z",
-      "updated_at": "2026-08-16T16:53:19Z",
+      "updated_at": "2026-08-17T19:06:48Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -18469,7 +18469,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/bazzite-deck-nvidia-gnome",
       "created_at": "2025-01-02T02:32:30Z",
-      "updated_at": "2026-08-16T16:29:10Z",
+      "updated_at": "2026-08-17T19:07:53Z",
       "repository": {
         "id": 599731589,
         "node_id": "R_kgDOI78thQ",
@@ -18766,7 +18766,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/aurora-nvidia-open",
       "created_at": "2025-01-02T23:43:04Z",
-      "updated_at": "2026-08-16T04:12:26Z",
+      "updated_at": "2026-08-17T06:58:51Z",
       "repository": {
         "id": 900371327,
         "node_id": "R_kgDONaqTfw",
@@ -18865,7 +18865,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/aurora-dx-nvidia-open",
       "created_at": "2025-01-02T23:53:34Z",
-      "updated_at": "2026-08-16T04:28:58Z",
+      "updated_at": "2026-08-17T07:02:42Z",
       "repository": {
         "id": 900371327,
         "node_id": "R_kgDONaqTfw",
@@ -19063,7 +19063,7 @@
       "visibility": "public",
       "url": "https://api.github.com/orgs/ublue-os/packages/container/ublue-builder",
       "created_at": "2025-02-12T15:26:39Z",
-      "updated_at": "2026-08-16T07:45:18Z",
+      "updated_at": "2026-08-18T00:13:03Z",
       "repository": {
         "id": 733586676,
         "node_id": "R_kgDOK7mk9A",
