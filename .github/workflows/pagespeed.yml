@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: KyleGospo/metrics@master
+      - uses: KyleGospo/metrics@0fee81a4d788cc2043732714563f21314ce4dd5f # master
         with:
           filename: metrics.plugin.pagespeed.svg
           token: NOT_NEEDED
